@@ -7,40 +7,54 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1><font size="6">運試しをしてみよう</font> </h1>
+    <h1><font size="7">運試しをしてみよう</font> </h1>
   
-    <div>
-        
-       <b><font size="6">1.American House</font> </b><br>
-
-<img src="./png/S__103874565.jpg" width="400"><br>
-<ul>みなとみらいクイーンズスクエアにあるアメリカンハウスというレストランの看板。</ul>
-<ul>自分で10/9に撮影した。</ul>
-<ul>この看板はAmerikann Houseの文字と碇と星だけのシンプルな看板なので見やすい。</ul>
-</div><br>
-   
- 
 <div>
-    <b><font size="6">2.横浜くりこ庵</font></b><br>
+    <b><font size="6">ゲーム説明</font></b><br>
 
-    <img src="./png/S__103874563.jpg" width="400"><br>
+    <ul>このゲームは18ピッタリを狙う確立ゲームです</ul>
+    <ul>足される数は1から3の間からランダムで選ばれます</ul>
+    <ul>足すならyes,足さないならnoを入力します</ul><br>
 
-    <ul>横浜駅西口5番街にある横浜くりこ庵というたい焼き屋さんの看板。</ul>
-    <ul>自分で10/9に撮影した。</ul>
-    <ul>この看板はたい焼きのイラストを知り背景に描き、店名を加えただけのシンプルな構造になっていて見やすい。</ul>
-</div><br>
-       
+    <code>
+        <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;">import random</li>
+        <li style="background-color:#EFF;">from re import I</li>
+        <li style="background-color:#EEF;">from tkinter import Y</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">counter=0</li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">print("18を超えないように限界まで挑戦してください")</li>
+        <li style="background-color:#EEF;">print("現在の数字は0です")</li>
+        <li style="background-color:#EFF;">while counter&lt;=18:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;a = random.randint(1,3)</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;question=input("まだ足しますか")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;if question=="yes":</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter=counter+a</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("現在の合計は",counter,"です")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;elif counter==18:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("おめでとうございます、99ぴったりです")</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;elif question=="no":</li>
+        <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("ハイスコアは",counter,"です")</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</li>
+        <li style="background-color:#EFF;"></li>
+        <li style="background-color:#EEF;"></li>
+        <li style="background-color:#EFF;">if counter&gt;18:</li>
+        <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("18を超えました、失敗です")</li>
+        <li style="background-color:#EFF;"></li>
+        </ol></code>
+
+
+
+</div>
 
 <div>
-    <b><font size="6">3.Tower Shop Yokohama</font></b><br>
-
-    <img src="./png/S__103874566.jpg" width="400"><br>
-
-    <ul>スカイガーデンの69階にあるTower Shop Yokohamaの看板</ul>
-    <ul>10/5に自分で撮影した。</ul>
-    <ul>この看板はTowerのWをランドマークの形にしているのでランドマークに関係があるとわかる。</ul>
-
-
+    <b><font size="6">感想</font></b><br>
+<ul>最初のゲームなので、ブラックジャックのようなシンプルなゲームにしてみた</ul>
+<ul>乱数やif文などの基礎的な使い方がわかったので、次からこれらをさらに発展させてもっと複雑なものを作ってみたい</ul>
 </div>
     
 

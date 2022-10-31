@@ -6,15 +6,15 @@ from tkinter import Y
 
 counter=0
 
-print("99を超えないように限界まで挑戦してください")
+print("18を超えないように限界まで挑戦してください")
 print("現在の数字は0です")
-while counter<=99:
-    a = random.randint(1,30)
+while counter<=18:
+    a = random.randint(1,3)
     question=input("まだ足しますか")
     if question=="yes":
         counter=counter+a
         print("現在の合計は",counter,"です")
-    elif counter==99:
+    elif counter==18:
         print("おめでとうございます、99ぴったりです")
         break
     elif question=="no":
@@ -22,5 +22,5 @@ while counter<=99:
         break
 
 
-if counter>=99:
-        print("99を超えました、失敗です")
+if counter>18:
+        print("18を超えました、失敗です")
